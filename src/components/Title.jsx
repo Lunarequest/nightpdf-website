@@ -13,7 +13,8 @@ export default function MyComponent() {
 				"The PDF reader you didn't know you needed.",
 				"NightPDF: your next pdf reader.",
 			],
-			typeSpeed: 60,
+			typeSpeed: 70,
+			backSpeed: 35
 		});
 
 		return () => {
