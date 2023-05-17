@@ -1469,7 +1469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^2.3.4":
+"astro@npm:^2.4.5":
   version: 2.4.5
   resolution: "astro@npm:2.4.5"
   dependencies:
@@ -5339,7 +5339,7 @@ __metadata:
     "@types/react": ^18.2.6
     "@types/react-dom": ^18.2.4
     "@typescript-eslint/parser": ^5.59.6
-    astro: ^2.3.4
+    astro: ^2.4.5
     astro-eslint-parser: ^0.14.0
     astro-icon: ^0.8.0
     autoprefixer: ^10.4.14
@@ -5356,7 +5356,7 @@ __metadata:
     sharp: ^0.32.1
     swiper: ^9.3.2
     tailwindcss: ^3.3.2
-    typed.js: ^2.0.132
+    typed.js: ^2.0.16
     typescript: ^5.0.4
   languageName: unknown
   linkType: soft
@@ -7611,7 +7611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typed.js@npm:^2.0.132":
+"typed.js@npm:^2.0.16":
   version: 2.0.132
   resolution: "typed.js@npm:2.0.132"
   checksum: f4a612b44f9d0d3cc8dc79739b6b1a22a021941a0889b9ae57edbbede0a2bc1ea698c2ad5cf1814e42859a4fcca2fae87b222ceca2a3f7425ece9affa1ff55c6

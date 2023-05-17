@@ -1,11 +1,11 @@
-import React from "react";
+import {useRef, useEffect} from "react";
 import Typed from "typed.js";
 
 export default function MyComponent() {
 	// Create reference to store the DOM element containing the animation
-	const el = React.useRef(null);
+	const el = useRef(null);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const typed = new Typed(el.current, {
 			strings: [
 				"Dark mode for PDFs",
