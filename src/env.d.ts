@@ -1,4 +1,4 @@
-///  <reference types="astro/client-image" />
+/// <reference types="@astrojs/image/client" />
 
 interface ImportMetaEnv {
 	readonly GITHUB_TOKEN: string;
@@ -6,4 +6,5 @@ interface ImportMetaEnv {
 
 interface ImportMeta {
 	readonly env: ImportMetaEnv;
+	glob:<T>(arg: string, {import: string, eager: bool})=>T;
 }

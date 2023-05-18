@@ -1,7 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
-import "@fontsource/iosevka";
+import "@fontsource/acme";
 export interface Props {
 	title: string;
 }
@@ -43,7 +43,7 @@ const { title } = Astro.props;
 			rel="alternate"
 			type="application/rss+xml"
 			href="/index.xml"
-			title="Null's blog"
+			title="Nightpdf"
 		/>
 	</head>
 	<body class="text-white bg-gray-800">
@@ -53,8 +53,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	* {
-		font-family: Iosevka, monospace;
+	body {
+		font-family: acme,sans-serif;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,

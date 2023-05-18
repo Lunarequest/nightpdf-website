@@ -1,8 +1,8 @@
 {
-	"search.exclude": {
-		"**/.yarn": true,
-		"**/.pnp.*": true
-	},
-	"eslint.nodePath": ".yarn/sdks",
-	"prettier.prettierPath": ".yarn/sdks/prettier/index.js"
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

@@ -1,28 +1,42 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Title from "../components/Title";
-import Carousel from "../components/Carousel.astro";
+import Layout from "@layouts/Layout.astro";
+import Title from "@components/Title";
+import Carousel from "@components/Carousel.astro";
 
 const carouselPages = [
 	{
 		name: "Default",
 		image: "../assets/gallery/default.png",
 		title: "Default",
+		description:
+			"The default filter of NightPDF it is a simple monochrome filter",
 	},
-	{ name: "Sepia", image: "../assets/gallery/sepia.png", title: "Sepia" },
-	{ name: "Redeye", image: "../assets/gallery/redeye.png", title: "Redeye" },
+	{
+		name: "Sepia",
+		image: "../assets/gallery/sepia.png",
+		title: "Sepia",
+		description: "The Sepia filter which applies a mild speia effect",
+	},
+	{
+		name: "Redeye",
+		image: "../assets/gallery/redeye.png",
+		title: "Redeye",
+		description: "The Redeye which makes everything red tinted",
+	},
 ];
 ---
 
 <Layout title="NightPDF dark mode for PDFs">
 	<main>
 		<div class="title text-center justify-normal">
-			<h1><Title client:load>
-				<p>Dark mode for PDFs</p>
-				<p>it&#39;s electron but my eyes don&#39;t care!</p>
-				<p>The PDF reader you didn't know you needed.</p>
-				<p>NightPDF: your next pdf reader.</p>
-			</Title></h1>
+			<h1>
+				<Title client:load>
+					<p>Dark mode for PDFs</p>
+					<p>it&#39;s electron but my eyes don&#39;t care!</p>
+					<p>The PDF reader you didn't know you needed.</p>
+					<p>NightPDF: your next pdf reader.</p>
+				</Title>
+			</h1>
 		</div>
 		<Carousel pages={carouselPages} />
 	</main>

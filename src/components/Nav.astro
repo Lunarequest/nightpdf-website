@@ -1,12 +1,12 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from "@astrojs/image/components";
 import logo from "../assets/logo.png";
 ---
 
 <nav class="bg-gray-950 px-2 sm:px-4 py-2.5 rounded">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
     <a href="/" class="flex items-center">
-      <Image src={logo} width="45%" alt="NightPDF logo" />
+      <Image src={logo} width={45} alt="NightPDF logo" />
       <span
         class="self-center text-xl font-semibold whitespace-nowrap text-black dark:text-white"
         >NightPDF</span
@@ -53,7 +53,7 @@ import logo from "../assets/logo.png";
 <script>
   const menu = document.querySelector("#menu");
   const button = document.querySelector("#menu-button");
-  button.addEventListener("click", () => {
+  button?.addEventListener("click", () => {
     if (menu != null) {
       menu.classList.toggle("hidden");
     }

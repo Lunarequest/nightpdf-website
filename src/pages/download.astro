@@ -1,6 +1,6 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
 import windows from "../assets/windows.png";
 import macos from "../assets/macos.png";
 import linux from "../assets/linux.png";
@@ -20,7 +20,7 @@ let release = await fetch(
     }
 );
 let data = await release.json();
-let version;
+let version: string;
 if (data) {
     version = data["tag_name"].replace("v", "");
 } else {
