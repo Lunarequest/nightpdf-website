@@ -1,3 +1,12 @@
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+install-state.gz
+
 # build output
 dist/
 
@@ -19,10 +28,3 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-
-.yarn/*
-!.yarn/cache
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
