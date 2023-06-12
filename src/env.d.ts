@@ -6,5 +6,5 @@ interface ImportMetaEnv {
 
 interface ImportMeta {
 	readonly env: ImportMetaEnv;
-	glob:<T>(arg: string, {import: string, eager: bool})=>T;
+	glob: <T>(arg: string, { import: string, eager: bool }) => T;
 }

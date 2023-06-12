@@ -5,47 +5,46 @@ const year = dateObs.getFullYear();
 ---
 
 <footer class="bg-gray-950 fixed inset-x-0 text-white bottom-0">
-    <center>
-        <div class="grid gap-3 h-1 grid-cols-3 grid-rows-1 social-icons">
-            <a
-                rel="me"
-                href="https://fosstodon.org/@NightPDF"
-                aria-label="Where to follow for new releases!"
-            >
-                <Icon name="mdi:mastodon" />
-            </a>
-            <a
-                href="https://github.com/lunarequest/NightPDF"
-                rel="me authn"
-                aria-label="Github where you can find NightPDF"
-                ><Icon name="mdi:github" /></a
-            >
-            <a
-                rel="me"
-                href="mailto:luna@nullrequest.com"
-                aria-label="Email me if you like the old school stuff"
-            >
-                <Icon name="mdi:email" />
-            </a>
-        </div>
-    </center>
+	<center>
+		<div class="grid gap-3 h-1 grid-cols-3 grid-rows-1 social-icons">
+			<a
+				rel="me"
+				href="https://fosstodon.org/@NightPDF"
+				aria-label="Where to follow for new releases!"
+			>
+				<Icon name="mdi:mastodon" />
+			</a>
+			<a
+				href="https://github.com/lunarequest/NightPDF"
+				rel="me authn"
+				aria-label="Github where you can find NightPDF"
+				><Icon name="mdi:github" /></a
+			>
+			<a
+				rel="me"
+				href="mailto:luna@nullrequest.com"
+				aria-label="Email me if you like the old school stuff"
+			>
+				<Icon name="mdi:email" />
+			</a>
+		</div>
+	</center>
 
-    <div class="text-center p-6">
-        <span class="text-muted"
-            >© <i id="copyright">{year} Luna Dragon</i></span
-        ><br />
-    </div>
+	<div class="text-center p-6">
+		<span class="text-muted">© <i id="copyright">{year} Luna Dragon</i></span
+		><br />
+	</div>
 </footer>
 
 <style>
-    .social-icon {
-        margin-left: 0.3em;
-        margin-right: 0.2em;
-        margin-bottom: 15%;
-        justify-content: center;
-    }
+	.social-icon {
+		margin-left: 0.3em;
+		margin-right: 0.2em;
+		margin-bottom: 15%;
+		justify-content: center;
+	}
 
-    [astro-icon] {
-        max-height: 25px;
-    }
+	[astro-icon] {
+		max-height: 25px;
+	}
 </style>
