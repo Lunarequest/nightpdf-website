@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 var dateObs = new Date();
 const year = dateObs.getFullYear();
 ---
@@ -12,20 +12,20 @@ const year = dateObs.getFullYear();
 				href="https://fosstodon.org/@NightPDF"
 				aria-label="Where to follow for new releases!"
 			>
-				<Icon name="mdi:mastodon" />
+				<Icon size={24} name="mdi:mastodon" />
 			</a>
 			<a
 				href="https://github.com/lunarequest/NightPDF"
 				rel="me authn"
 				aria-label="Github where you can find NightPDF"
-				><Icon name="mdi:github" /></a
+				><Icon size={24} name="mdi:github" /></a
 			>
 			<a
 				rel="me"
 				href="mailto:luna@nullrequest.com"
 				aria-label="Email me if you like the old school stuff"
 			>
-				<Icon name="mdi:email" />
+				<Icon size={24} name="mdi:email" />
 			</a>
 		</div>
 	</center>
