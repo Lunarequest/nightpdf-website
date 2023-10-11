@@ -16,7 +16,7 @@ export interface Props {
 const { pages } = Astro.props;
 
 const imagepaths = pages.map((page: Page) => page.image);
-const imageFiles = import.meta.glob<ImageMetadata>(
+const imageFiles: any = import.meta.glob<ImageMetadata>(
 	"../assets/gallery/*.{png,webp,jpg,jpeg}",
 	{ import: "default", eager: true }
 );
@@ -69,7 +69,6 @@ const images = folderFiles.map((image) => imageFiles[image]);
 	// @ts-ignore
 	const _swiper = new Swiper(".mySwiper", {
 		cssMode: true,
-		lazy: true,
 		loop: true,
 		spaceBetween: 30,
 		centeredSlides: true,
