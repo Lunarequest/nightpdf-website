@@ -33,6 +33,7 @@
 		"@types/node": "^20.10.5",
 		"@types/react": "^18.2.45",
 		"@types/react-dom": "^18.2.18",
+		"@types/tailwindcss": "^3.1.0",
 		"@typescript-eslint/parser": "^6.15.0",
 		"astro-eslint-parser": "^0.16.0",
 		"astro-vscode": "^2.5.4",
@@ -45,8 +46,9 @@
 		"postcss": "^8.4.32",
 		"prettier": "^3.1.1",
 		"prettier-plugin-astro": "^0.12.2",
+		"ts-node": "^10.9.2",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.10"
 	},
-	"packageManager": "yarn@4.0.0-rc.53"
+	"packageManager": "yarn@4.0.2"
 }
