@@ -1,8 +1,10 @@
 import autoprefixer from "autoprefixer";
+import tailwindcss from "tailwindcss";
 import cssnano from "cssnano";
 
 module.exports = {
 	plugins: [
+		tailwindcss(),
 		autoprefixer({ cascade: true }),
 		cssnano({
 			preset: [
