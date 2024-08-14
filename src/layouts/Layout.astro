@@ -12,7 +12,7 @@ const socialImageURL = new URL("/images/logo.png", Astro.site);
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -48,6 +48,15 @@ const { title } = Astro.props;
 	</head>
 	<body class="text-white bg-gray-800">
 		<Nav />
+		<div class="bg-red-950">
+			<p>
+				Night pdf is no longer maintained read <a
+					class="text-blue-500"
+					href="https://github.com/Lunarequest/NightPDF/issues/73"
+					>this issue</a
+				> for more information
+			</p>
+		</div>
 		<slot />
 		<Footer />
 	</body>
@@ -57,7 +66,14 @@ const { title } = Astro.props;
 		font-family: acme, sans-serif;
 	}
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
 	}
 </style>
